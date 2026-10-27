@@ -5,21 +5,21 @@
 class Glint < Formula
   desc "Lightweight Proxmox monitoring dashboard"
   homepage "https://github.com/darshan-rambhia/glint"
-  version "0.6.1"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/darshan-rambhia/glint/releases/download/v0.6.1/glint_0.6.1_darwin_amd64.tar.gz"
-      sha256 "4eac189ee3ae9e78ac90e23c34abe66d816906296c08752513ee2db59e86699f"
+      url "https://github.com/darshan-rambhia/glint/releases/download/v0.7.0/glint_0.7.0_darwin_amd64.tar.gz"
+      sha256 "ca8086478d142ad919b8f9063e06b420bbda61ad23f9108e68b8274bf3135d5e"
 
       define_method(:install) do
         bin.install "glint"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/darshan-rambhia/glint/releases/download/v0.6.1/glint_0.6.1_darwin_arm64.tar.gz"
-      sha256 "58daa84500fc1c344ce3c6cdc8e68200a0eb0929a31bf3e524feb2785c7c53c2"
+      url "https://github.com/darshan-rambhia/glint/releases/download/v0.7.0/glint_0.7.0_darwin_arm64.tar.gz"
+      sha256 "e789b146506d78a5306983d00961008859f0b49e69e3c17a2a7f8501ee700da6"
 
       define_method(:install) do
         bin.install "glint"
@@ -29,15 +29,15 @@ class Glint < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darshan-rambhia/glint/releases/download/v0.6.1/glint_0.6.1_linux_amd64.tar.gz"
-      sha256 "662f4d0c5a9d7a07e2af85fd9ec7fc031f38a089212ab27eead25019dd97834b"
+      url "https://github.com/darshan-rambhia/glint/releases/download/v0.7.0/glint_0.7.0_linux_amd64.tar.gz"
+      sha256 "2afba715a6365e7eb378a55953b8092490dc277e128cd889406f5c58502f8e1e"
       define_method(:install) do
         bin.install "glint"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darshan-rambhia/glint/releases/download/v0.6.1/glint_0.6.1_linux_arm64.tar.gz"
-      sha256 "410071f347d31debd72200761efb3855f99da8e2d03346a6a5587a4f328d61fe"
+      url "https://github.com/darshan-rambhia/glint/releases/download/v0.7.0/glint_0.7.0_linux_arm64.tar.gz"
+      sha256 "4c61e9ebeb044f2523969e7ca966acda80a61f2b79394c7b54d152bd4847cbe9"
       define_method(:install) do
         bin.install "glint"
       end
